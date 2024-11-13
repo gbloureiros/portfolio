@@ -1,0 +1,200 @@
+@media (max-width: 1415px) {
+    main {
+        grid: 
+        "principal" 100vh
+        "sobre" 100vh
+        "projetos" minmax(100vh, 160vh)
+        "habilidades" minmax(100vh, 150vh)
+        "footer" auto;
+      }
+
+      .projetos {
+        justify-content: flex-start;
+        margin-top: 5rem;
+    }
+
+    .projetos .container-projetos {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    main {
+        grid: 
+        "principal" 100vh
+        "sobre" 100vh
+        "projetos" minmax(100vh, 160vh)
+        "habilidades" minmax(100vh, 160vh)
+        "footer" auto;
+      }
+
+    .habilidades .container-habilidades {
+        grid: 
+        "html css"
+        "js git"
+        "python clean";
+        grid-template-columns: repeat(2, minmax(100px, 500px));
+    }
+}
+
+@media (max-width: 900px) {
+    .header .menu {
+        display: block;
+    }
+
+    .header .navegacao ul {
+        display: none;
+    }
+
+    .header input:checked ~ ul {
+        display: block;
+    }
+
+    .header .navegacao {
+        position: absolute;
+        top: 8px;
+        right: 2rem;
+        z-index: 1;
+    }
+
+    .header .navegacao ul {
+        width: 20rem;
+        background-color: #fff;
+        padding: 2rem;
+    }
+
+    .header .navegacao ul li a {
+        text-align: center;
+        padding: 2rem;
+        display: block;
+    }
+
+    .header .navegacao ul .mode {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .header .navegacao ul .mode:after {
+        top: 1rem;
+    }
+}
+
+@media (max-width: 865px) {
+    main {
+        grid: 
+        "principal" 100vh
+        "sobre" 100vh
+        "projetos" minmax(100vh, 205vh)
+        "habilidades" minmax(100vh, 230vh)
+        "footer" auto;
+      }
+
+    .habilidades .container-habilidades {
+        grid: 
+        "html" 
+        "css"
+        "js" 
+        "git"
+        "python" 
+        "clean";
+        grid-gap: 5rem;
+        grid-template-columns: repeat(1, minmax(100px, 500px));
+        
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        grid: 
+        "principal" 100vh
+        "sobre" 100vh
+        "projetos" minmax(100vh, 230vh)
+        "habilidades" minmax(100vh, 250vh)
+        "footer" auto;
+      }
+}
+
+@media (max-width: 550px) {
+    main {
+        grid: 
+        "principal" 100vh
+        "sobre" 100vh
+        "projetos" minmax(100vh, 200vh)
+        "habilidades" minmax(100vh, 250vh)
+        "footer" auto;
+      }
+
+    .principal .titulo {
+        font-size: 6rem;
+      }
+      
+      .principal .subtitulo {
+        font-size: 4rem;
+      }
+      
+      .principal .redes-sociais ul {
+        display: flex;
+        gap: 3rem;
+        font-size: 2rem;
+      }
+
+      .sobre .titulo-sobre {
+        font-size: 3.5rem;
+    }
+    
+    .sobre .conteudo-sobre {
+        max-width: 35rem;
+        text-align: justify;
+    }
+    
+    .sobre .conteudo-sobre h3 {
+        font-size: 2.4rem;
+        padding-bottom: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        grid: 
+        "principal" 100vh
+        "sobre" 100vh
+        "projetos" minmax(100vh, 205vh)
+        "habilidades" minmax(100vh, 300vh)
+        "footer" auto;
+      }
+
+    .principal .titulo {
+        font-size: 5rem;
+      }
+
+      .principal .subtitulo {
+        font-size: 3rem;
+      }
+
+      .projetos h2 {
+        font-size: 3.5rem;
+        padding-bottom: 6rem;
+    }
+
+    .projetos .container-projetos .projeto {
+        width: 300px;
+        height: 370px;
+    }
+
+    .habilidades h2 {
+        font-size: 3.5rem;
+        padding-bottom: 7rem;
+    }
+
+    .habilidades .container-habilidades {
+        grid-gap: 3.5rem;
+    }
+
+    .footer {
+        padding: 0 5rem;
+    }
+    
+    .footer p {
+        width: 20rem;
+    }
+}

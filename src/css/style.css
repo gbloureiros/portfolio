@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+main {
+  display: grid;
+  grid: 
+  "principal" 100vh
+  "sobre" 100vh
+  "projetos" 100vh
+  "habilidades" 100vh
+  "footer" auto;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-area: principal;
+}
+
+.principal .titulo {
+  font-size: 7rem;
+}
+
+.principal .subtitulo {
+  font-size: 5rem;
+}
+
+.principal .subtitulo span {
+  color: var(--cor-padrao);
+}
+
+.principal .redes-sociais ul {
+  display: flex;
+  gap: 3rem;
+  font-size: 2.5rem;
+}
+
+.principal .redes-sociais ul a {
+  transition: 0.2s ease-in-out;
+}
+
+.principal .redes-sociais ul a:hover {
+  color: var(--cor-padrao);
+}
+
+.principal:after {
+  content: url("../images/seta_preta.png");
+  position: absolute;
+  height: 3.5rem;
+  bottom: 12rem;
+  animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateY(0.4em);
+    opacity: 0.9;
+  }
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    grid-area: sobre;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.sobre .titulo-sobre {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.sobre .titulo-sobre span {
+    color: var(--cor-padrao);
+}
+
+.sobre .conteudo-sobre {
+    max-width: 50rem;
+    text-align: justify;
+}
+
+.sobre .conteudo-sobre h3 {
+    font-size: 3rem;
+    padding-bottom: 1.6rem;
+}
+
+.sobre .conteudo-sobre h3 span {
+    color: var(--cor-padrao);
+}
+
+.sobre .conteudo-sobre p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.sobre .conteudo-sobre a {
+    background-color: var(--cor-padrao);
+    padding: 1rem 2rem;
+    border: 1px solid var(--cor-padrao);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.sobre .conteudo-sobre a:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid var(--cor-padrao);
+    color: var(--cor-padrao);
+}
+
+.projetos {
+    grid-area: projetos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos h2 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.projetos h2 span {
+    color: var(--cor-padrao);
+}
+
+.projetos .container-projetos {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.projetos .container-projetos .projeto {
+    width: 400px;
+    height: 470px;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+}
+
+.projetos .container-projetos .projeto .imagem-link {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.projetos .container-projetos .projeto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.projetos .container-projetos .projeto .imagem-link::before {
+    content: "";
+    background-color: var(--cor-padrao);
+    border-radius: 2rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+  
+  
+.projetos .container-projetos .projeto .imagem-link:hover::before {
+    opacity: 0.4;
+}
+
+.projetos .container-projetos .projeto .imagem-link::after {
+    content: "";
+    background: url(../images/icon-view.svg) center no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+  
+.projetos .container-projetos .projeto .imagem-link:hover::after {
+    opacity: 1;
+}
+
+.habilidades {
+    grid-area: habilidades;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidades h2 {
+    font-size: 4rem;
+    padding-bottom: 7rem;
+    text-transform: uppercase;
+}
+
+.habilidades h2 span {
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades {
+    display: grid;
+    grid: 
+    "html css js"
+    "git python clean";
+    grid-gap: 10rem;
+    margin: 0 7rem;
+    grid-template-columns: repeat(3, minmax(100px, 500px));
+}
+
+.habilidades .container-habilidades .html {
+    grid-area: html;
+}
+
+.habilidades .container-habilidades .html .fa-html5 {
+    font-size: 10rem;
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades .html h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.habilidades .container-habilidades .html p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.habilidades .container-habilidades .css {
+    grid-area: css;
+}
+
+.habilidades .container-habilidades .css .fa-css3-alt {
+    font-size: 10rem;
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades .css h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.habilidades .container-habilidades .css p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.habilidades .container-habilidades .js {
+    grid-area: js;
+}
+
+.habilidades .container-habilidades .js .fa-js {
+    font-size: 10rem;
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades .js h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.habilidades .container-habilidades .js p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.habilidades .container-habilidades .git {
+    grid-area: git;
+}
+
+.habilidades .container-habilidades .git .fa-git-alt {
+    font-size: 10rem;
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades .git h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.habilidades .container-habilidades .git p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.habilidades .container-habilidades .python {
+    grid-area: python;
+}
+
+.habilidades .container-habilidades .python .fa-python {
+    font-size: 10rem;
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades .python h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.habilidades .container-habilidades .python p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.habilidades .container-habilidades .clean-code {
+    grid-area: clean;
+}
+
+.habilidades .container-habilidades .clean-code .fa-code {
+    font-size: 10rem;
+    color: var(--cor-padrao);
+}
+
+.habilidades .container-habilidades .clean-code h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.habilidades .container-habilidades .clean-code p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--cor-padrao);
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 1.3rem;
+}
+
+.footer .voltar img {
+    width: 2rem;   
+}
