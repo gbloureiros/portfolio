@@ -203,8 +203,8 @@
     grid:
       "principal" 100vh
       "sobre" 100vh
-      "projetos" minmax(100vh, 250vh)
-      "habilidades" minmax(100vh, 500vh)
+      "projetos" minmax(100vh, 210vh)
+      "habilidades" minmax(100vh, 350vh)
       "footer" auto;
   }
 
