@@ -241,5 +241,16 @@
       padding-bottom: 7rem;
     }
 
+    .habilidades .container-habilidades {
+    grid:
+      "html"
+      "css"
+      "js"
+      "git"
+      "python"
+      "clean";
+    grid-template-rows: repeat(6, minmax(300px, 500px));
+  }
+
   }
 
