@@ -199,46 +199,45 @@
 }
 
 @media (max-width: 375px) {
-    main {
-      grid:
-        "principal" 100vh
-        "sobre" 100vh
-        "projetos" minmax(100vh, 250vh)
-        "habilidades" minmax(100vh, 500vh)
-        "footer" auto;
-    }
-  
-    .principal .titulo {
-      font-size: 4rem;
-    }
-  
-    .principal .subtitulo {
-      font-size: 2.5rem;
-    }
-
-    .sobre .titulo-sobre {
-        text-transform: uppercase;
-        font-size: 3rem;
-      }
-
-      .sobre .conteudo-sobre {
-        max-width: 30rem;
-        text-align: justify;
-      }
-
-      .sobre .conteudo-sobre h3 {
-        font-size: 2rem;
-        padding-bottom: 1.6rem;
-      }
-  
-    .projetos h2 {
-      font-size: 3rem;
-      padding-bottom: 6rem;
-    }
-  
-    .habilidades h2 {
-      font-size: 3rem;
-      padding-bottom: 7rem;
-    }
+  main {
+    grid:
+      "principal" 100vh
+      "sobre" 100vh
+      "projetos" minmax(100vh, 250vh)
+      "habilidades" minmax(100vh, 500vh)
+      "footer" auto;
   }
 
+  .principal .titulo {
+    font-size: 4rem;
+  }
+
+  .principal .subtitulo {
+    font-size: 2.5rem;
+  }
+
+  .sobre .titulo-sobre {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  .sobre .conteudo-sobre {
+    max-width: 30rem;
+    text-align: justify;
+  }
+
+  .sobre .conteudo-sobre h3 {
+    font-size: 2rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .projetos h2 {
+    font-size: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  .habilidades h2 {
+    font-size: 3rem;
+    padding-bottom: 7rem;
+  }
+}
