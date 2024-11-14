@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/dark-mode.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
     <link
@@ -43,7 +44,12 @@
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
-          <li class="mode"><i class="fa-solid fa-moon"></i></li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="switch" />
+              <span class="slider round"></span>
+            </label>
+          </li>
         </ul>
       </nav>
     </header>
@@ -75,6 +81,7 @@
             </li>
           </ul>
         </div>
+        <i class="fa-solid fa-arrow-down"></i>
       </section>
 
       <section class="sobre" id="sobre">
@@ -210,9 +217,7 @@
     <footer class="footer">
       <p>Copyright © 2024 | by Gabriel Loureiro. All right reserved.</p>
       <div class="voltar">
-        <a href="#menu"
-          ><img src="./src/images/seta cima.png" alt="voltar"
-        /></a>
+        <a href="#menu"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
     </footer>
 
@@ -222,5 +227,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>

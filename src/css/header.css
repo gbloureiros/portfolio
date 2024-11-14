@@ -15,39 +15,13 @@
 
 .header .navegacao ul {
   display: flex;
+  align-items: center;
   gap: 3rem;
   font-size: 1.7rem;
 }
 
 .header .navegacao ul a {
   transition: 0.2s ease-in-out;
-}
-
-.header .navegacao ul .mode {
-  position: relative;
-  font-size: 2rem;
-}
-
-.header .navegacao ul .mode:hover {
-  cursor: pointer;
-}
-
-.header .navegacao ul .mode:after {
-  display: none;
-  position: absolute;
-  top: -5px;
-  padding: 5px;
-  font-size: 1.4rem;
-  margin-left: 2.5rem;
-  border-radius: 3px;
-  content: "Nox!";
-  background-color: var(--cor-padrao);
-  color: #fff;
-  opacity: 0.8;
-}
-
-.header .navegacao ul .mode:hover:after {
-  display: block;
 }
 
 .header .navegacao ul a:hover {
