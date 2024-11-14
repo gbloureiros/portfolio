@@ -204,7 +204,7 @@
         "principal" 100vh
         "sobre" 100vh
         "projetos" minmax(100vh, 250vh)
-        "habilidades" minmax(100vh, 450vh)
+        "habilidades" minmax(100vh, 500vh)
         "footer" auto;
     }
   
@@ -240,17 +240,5 @@
       font-size: 3rem;
       padding-bottom: 7rem;
     }
-
-    .habilidades .container-habilidades {
-    grid:
-      "html"
-      "css"
-      "js"
-      "git"
-      "python"
-      "clean";
-    grid-template-rows: repeat(6, minmax(300px, 500px));
-  }
-
   }
 
