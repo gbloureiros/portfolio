@@ -1,12 +1,14 @@
 :root {
   --cor-padrao: rgb(85, 131, 17);
   --cor-bg: #fafafa;
-  --cor-da-letra: #000
+  --cor-da-letra: #000;
+  --cor-do-hamburguer: #000;
+  --cor-da-sombra: rgba(0, 0, 0, 0.2);
 }
 
 .dark-mode:root {
   --cor-bg: #141414;
-  --cor-da-letra: #fff
+  --cor-da-letra: #fff;
+  --cor-do-hamburguer: #fff;
+  --cor-da-sombra: rgba(255, 255, 255, 0.2);
 }
-
-/* #212529 */

@@ -59,8 +59,9 @@
 
   .header .navegacao ul {
     width: 20rem;
-    background-color: #fff;
+    background-color: var(--cor-bg);
     padding: 2rem;
+    box-shadow: 2px 2px 2px 2px var(--cor-da-sombra);
   }
 
   .header .navegacao ul li a {
@@ -69,13 +70,10 @@
     display: block;
   }
 
-  .header .navegacao ul .mode {
-    padding-top: 1rem;
-    text-align: center;
-  }
-
-  .header .navegacao ul .mode:after {
-    top: 1rem;
+  .header .navegacao ul li:last-child {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -241,5 +239,3 @@
     padding-bottom: 7rem;
   }
 }
-
-
