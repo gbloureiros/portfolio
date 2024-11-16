@@ -8,7 +8,7 @@
 
 .dark-mode:root {
   --cor-bg: #141414;
-  --cor-da-letra: #fff;
-  --cor-do-hamburguer: #fff;
+  --cor-da-letra: #fafafa;
+  --cor-do-hamburguer: #fafafa;
   --cor-da-sombra: rgba(255, 255, 255, 0.2);
 }

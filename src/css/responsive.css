@@ -105,7 +105,7 @@
     grid:
       "principal" 100vh
       "sobre" 100vh
-      "projetos" minmax(100vh, 230vh)
+      "projetos" minmax(100vh, 250vh)
       "habilidades" minmax(100vh, 250vh)
       "footer" auto;
   }
@@ -227,6 +227,16 @@
   .sobre .conteudo-sobre h3 {
     font-size: 2rem;
     padding-bottom: 1.6rem;
+  }
+
+  .projetos .container-projetos .container {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .projetos .container-projetos .container .projeto {
+    width: 280px;
+    height: 200px;
   }
 
   .projetos h2 {
