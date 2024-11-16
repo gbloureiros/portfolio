@@ -250,6 +250,16 @@
   }
 }
 
+@media (max-width: 375px) {
+  .projetos .container-projetos .container .info-projeto {
+    margin-bottom: 1rem;
+  }
+
+  .projetos .container-projetos .container .projeto {
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 300px) {
   main {
     grid:
