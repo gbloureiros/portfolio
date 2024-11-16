@@ -196,7 +196,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   main {
     grid:
       "principal" 100vh
@@ -237,5 +237,16 @@
   .habilidades h2 {
     font-size: 3rem;
     padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 300px) {
+  main {
+    grid:
+      "principal" 100vh
+      "sobre" 100vh
+      "projetos" minmax(100vh, 300vh)
+      "habilidades" minmax(100vh, 500vh)
+      "footer" auto;
   }
 }
