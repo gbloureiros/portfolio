@@ -163,7 +163,7 @@
       "principal" 100vh
       "sobre" minmax(100vh, 150vh)
       "projetos" minmax(100vh, 270vh)
-      "habilidades" minmax(100vh, 230vh)
+      "habilidades" minmax(100vh, 250vh)
       "footer" auto;
   }
 
