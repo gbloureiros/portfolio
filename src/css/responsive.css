@@ -21,9 +21,9 @@
 @media (max-width: 1200px) {
   .habilidades {
     display: grid;
-    grid: 
-    "hard" 600px
-    "soft" 600px;
+    grid:
+      "hard" 600px
+      "soft" 600px;
     grid-template-columns: minmax(100px, 600px);
     grid-gap: 0;
   }
@@ -83,9 +83,9 @@
 @media (max-width: 600px) {
   .habilidades {
     display: grid;
-    grid: 
-    "hard" 600px
-    "soft" 600px;
+    grid:
+      "hard" 600px
+      "soft" 600px;
     grid-template-columns: minmax(100px, 300px);
     grid-gap: 15rem;
   }
@@ -93,23 +93,23 @@
   .habilidades .soft-skills {
     grid-area: soft;
     grid:
-      "soft soft" 
+      "soft soft"
       "flexibilidade comunicacao"
       "organizacao inteligencia"
       "criatividade adaptabilidade";
     grid-gap: 0 5rem;
   }
-  
+
   .habilidades .hard-skills {
     grid-area: hard;
     grid:
-      "hard hard" 
-      "html css" 
+      "hard hard"
+      "html css"
       "git python"
       "js clean";
-      grid-gap: 0 5rem;
+    grid-gap: 0 5rem;
   }
-  
+
   .habilidades .hard-skills,
   .habilidades .soft-skills {
     display: grid;
@@ -162,8 +162,8 @@
     grid:
       "principal" 100vh
       "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 250vh)
-      "habilidades" minmax(100vh, 210vh)
+      "projetos" minmax(100vh, 270vh)
+      "habilidades" minmax(100vh, 230vh)
       "footer" auto;
   }
 

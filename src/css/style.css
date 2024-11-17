@@ -275,7 +275,7 @@ main {
 .habilidades .soft-skills {
   grid-area: soft;
   grid:
-    "soft soft soft" 
+    "soft soft soft"
     "flexibilidade comunicacao criatividade"
     "organizacao inteligencia adaptabilidade";
 }
@@ -283,7 +283,7 @@ main {
 .habilidades .hard-skills {
   grid-area: hard;
   grid:
-    "hard hard hard" 
+    "hard hard hard"
     "html css js"
     "git python clean";
 }
