@@ -8,6 +8,8 @@ body {
   font-family: "Roboto", serif;
   background-color: var(--cor-bg);
   color: var(--cor-da-letra);
+  height: 100vh;
+  margin: 0 auto;
 }
 
 main {
