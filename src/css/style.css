@@ -150,8 +150,8 @@ main {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 500px;
-  justify-content: center;
+  height: 400px;
+  justify-content: space-between;
   box-shadow: 2px 2px 2px 3px var(--cor-da-sombra);
   border-radius: 2rem;
   padding: 1rem;
@@ -159,7 +159,7 @@ main {
 
 .projetos .container-projetos .container .projeto {
   width: 380px;
-  height: 300px;
+  height: 250px;
   border-radius: 2rem;
   box-shadow: 1px 1px 1px 2px var(--cor-da-sombra);
 }
@@ -180,12 +180,12 @@ main {
   padding: 1.5rem 0;
 }
 
-.projetos .container-projetos .container .info-projeto .links-projeto {
+.projetos .container-projetos .container .links-projeto {
   display: flex;
   justify-content: space-between;
 }
 
-.projetos .container-projetos .container .info-projeto .links-projeto a {
+.projetos .container-projetos .container .links-projeto a {
   font-size: 1.2rem;
   background-color: var(--cor-padrao);
   width: 130px;
@@ -199,7 +199,7 @@ main {
   border: 1px solid var(--cor-padrao);
 }
 
-.projetos .container-projetos .container .info-projeto .links-projeto a:hover {
+.projetos .container-projetos .container .links-projeto a:hover {
   background-color: #fff;
   color: var(--cor-padrao);
 }
@@ -251,7 +251,6 @@ main {
 .habilidades {
   grid-area: habilidades;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -266,146 +265,165 @@ main {
   color: var(--cor-padrao);
 }
 
-.habilidades .container-habilidades {
+.habilidades {
   display: grid;
-  grid:
-    "html css js"
-    "git python clean";
-  grid-gap: 10rem;
-  margin: 0 7rem;
-  grid-template-columns: repeat(3, minmax(100px, 500px));
+  grid: "hard soft";
+  grid-template-columns: repeat(2, minmax(100px, 600px));
+  grid-gap: 16rem;
 }
 
-.habilidades .container-habilidades .html {
+.habilidades .soft-skills {
+  grid-area: soft;
+  grid:
+    "soft soft soft" 
+    "flexibilidade comunicacao criatividade"
+    "organizacao inteligencia adaptabilidade";
+}
+
+.habilidades .hard-skills {
+  grid-area: hard;
+  grid:
+    "hard hard hard" 
+    "html css js"
+    "git python clean";
+}
+
+.habilidades .hard-skills,
+.habilidades .soft-skills {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+}
+
+.habilidades .hard-skills .html,
+.css,
+.js,
+.git,
+.python,
+.clean-code {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades .hard-skills .html .fa-html5,
+.css .fa-css3-alt,
+.js .fa-js,
+.git .fa-git-alt,
+.python .fa-python,
+.clean-code .fa-code {
+  font-size: 10rem;
+  color: var(--cor-padrao);
+}
+
+.habilidades .hard-skills .html h3,
+.css h3,
+.js h3,
+.git h3,
+.python h3,
+.clean-code h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.habilidades .hard-skills .titulo-hard {
+  grid-area: hard;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilidades .soft-skills .titulo-soft {
+  grid-area: soft;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilidades .hard-skills .html {
   grid-area: html;
 }
 
-.habilidades .container-habilidades .html .fa-html5 {
-  font-size: 10rem;
-  color: var(--cor-padrao);
-}
-
-.habilidades .container-habilidades .html h3 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 1rem 0;
-}
-
-.habilidades .container-habilidades .html p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.habilidades .container-habilidades .css {
+.habilidades .hard-skills .css {
   grid-area: css;
 }
 
-.habilidades .container-habilidades .css .fa-css3-alt {
-  font-size: 10rem;
-  color: var(--cor-padrao);
-}
-
-.habilidades .container-habilidades .css h3 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 1rem 0;
-}
-
-.habilidades .container-habilidades .css p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.habilidades .container-habilidades .js {
+.habilidades .hard-skills .js {
   grid-area: js;
 }
 
-.habilidades .container-habilidades .js .fa-js {
-  font-size: 10rem;
-  color: var(--cor-padrao);
-}
-
-.habilidades .container-habilidades .js h3 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 1rem 0;
-}
-
-.habilidades .container-habilidades .js p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.habilidades .container-habilidades .git {
+.habilidades .hard-skills .git {
   grid-area: git;
 }
 
-.habilidades .container-habilidades .git .fa-git-alt {
-  font-size: 10rem;
-  color: var(--cor-padrao);
-}
-
-.habilidades .container-habilidades .git h3 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 1rem 0;
-}
-
-.habilidades .container-habilidades .git p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.habilidades .container-habilidades .python {
+.habilidades .hard-skills .python {
   grid-area: python;
 }
 
-.habilidades .container-habilidades .python .fa-python {
-  font-size: 10rem;
-  color: var(--cor-padrao);
-}
-
-.habilidades .container-habilidades .python h3 {
-  font-size: 3rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 1rem 0;
-}
-
-.habilidades .container-habilidades .python p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: justify;
-}
-
-.habilidades .container-habilidades .clean-code {
+.habilidades .hard-skills .clean-code {
   grid-area: clean;
 }
 
-.habilidades .container-habilidades .clean-code .fa-code {
-  font-size: 10rem;
+.habilidades .soft-skills .flex {
+  grid-area: flexibilidade;
+}
+
+.habilidades .soft-skills .comun {
+  grid-area: comunicacao;
+}
+
+.habilidades .soft-skills .cria {
+  grid-area: criatividade;
+}
+
+.habilidades .soft-skills .orga {
+  grid-area: organizacao;
+}
+
+.habilidades .soft-skills .inte {
+  grid-area: inteligencia;
+}
+
+.habilidades .soft-skills .adap {
+  grid-area: adaptabilidade;
+}
+
+.habilidades .soft-skills .flex,
+.comun,
+.cria,
+.orga,
+.inte,
+.adap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades .soft-skills .flex .fa-person,
+.comun .fa-comments,
+.cria .fa-shapes,
+.orga .fa-briefcase,
+.inte .fa-brain,
+.adap .fa-users {
+  font-size: 7.6rem;
   color: var(--cor-padrao);
 }
 
-.habilidades .container-habilidades .clean-code h3 {
-  font-size: 3rem;
+.habilidades .soft-skills .flex h3,
+.comun h3,
+.cria h3,
+.orga h3,
+.inte h3,
+.adap h3 {
+  font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 1rem 0;
-}
-
-.habilidades .container-habilidades .clean-code p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: justify;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .footer {
@@ -422,6 +440,15 @@ main {
 .footer p {
   font-size: 1.3rem;
   color: #000;
+}
+
+.footer p a {
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
 }
 
 .footer .voltar .fa-arrow-up {
