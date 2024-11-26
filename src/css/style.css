@@ -30,6 +30,7 @@ main {
   justify-content: center;
   position: relative;
   grid-area: principal;
+  background-color: red;
 }
 
 .principal .titulo {
@@ -67,19 +68,32 @@ main {
 
 .sobre {
   display: flex;
-  flex-direction: column;
   grid-area: sobre;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 15rem;
+  background-color: antiquewhite;
 }
 
-.sobre .titulo-sobre {
+.sobre .imagem-sobre {
+  width: 40rem;
+  height: 40rem;
+}
+
+.sobre .imagem-sobre img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--cor-da-letra);
+}
+
+.sobre .conteudo-sobre .titulo-sobre {
   text-transform: uppercase;
+  text-align: center;
   font-size: 4rem;
+  padding-bottom: 3rem;
 }
 
-.sobre .titulo-sobre span {
+.sobre .conteudo-sobre .titulo-sobre span {
   color: var(--cor-padrao);
 }
 
@@ -126,6 +140,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: aqua;
 }
 
 .projetos h2 {
@@ -255,6 +270,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: brown;
 }
 
 .habilidades h2 {
@@ -278,16 +294,16 @@ main {
   grid-area: soft;
   grid:
     "soft soft soft"
-    "flexibilidade comunicacao criatividade"
-    "organizacao inteligencia adaptabilidade";
+    "ss1 ss2 ss3"
+    "ss4 ss5 ss6";
 }
 
 .habilidades .hard-skills {
   grid-area: hard;
   grid:
     "hard hard hard"
-    "html css js"
-    "git python clean";
+    "hs1 hs2 hs3"
+    "hs4 hs5 hs6";
 }
 
 .habilidades .hard-skills,
@@ -296,34 +312,34 @@ main {
   grid-template-columns: repeat(3, minmax(100px, 200px));
 }
 
-.habilidades .hard-skills .html,
-.css,
-.js,
-.git,
-.python,
-.clean-code {
+.habilidades .hard-skills .hs1,
+.hs2,
+.hs3,
+.hs4,
+.hs5,
+.hs6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.habilidades .hard-skills .html .fa-html5,
-.css .fa-css3-alt,
-.js .fa-js,
-.git .fa-git-alt,
-.python .fa-python,
-.clean-code .fa-code {
+.habilidades .hard-skills .hs1 .fa-html5,
+.hs2 .fa-css3-alt,
+.hs3 .fa-js,
+.hs4 .fa-git-alt,
+.hs5 .fa-python,
+.hs6 .fa-database {
   font-size: 10rem;
   color: var(--cor-padrao);
 }
 
-.habilidades .hard-skills .html h3,
-.css h3,
-.js h3,
-.git h3,
-.python h3,
-.clean-code h3 {
+.habilidades .hard-skills .hs1 h3,
+.hs2 h3,
+.hs3 h3,
+.hs4 h3,
+.hs5 h3,
+.hs6 h3 {
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -345,82 +361,82 @@ main {
   align-items: center;
 }
 
-.habilidades .hard-skills .html {
-  grid-area: html;
+.habilidades .hard-skills .hs1 {
+  grid-area: hs1;
 }
 
-.habilidades .hard-skills .css {
-  grid-area: css;
+.habilidades .hard-skills .hs2 {
+  grid-area: hs2;
 }
 
-.habilidades .hard-skills .js {
-  grid-area: js;
+.habilidades .hard-skills .hs3 {
+  grid-area: hs3;
 }
 
-.habilidades .hard-skills .git {
-  grid-area: git;
+.habilidades .hard-skills .hs4 {
+  grid-area: hs4;
 }
 
-.habilidades .hard-skills .python {
-  grid-area: python;
+.habilidades .hard-skills .hs5 {
+  grid-area: hs5;
 }
 
-.habilidades .hard-skills .clean-code {
-  grid-area: clean;
+.habilidades .hard-skills .hs6 {
+  grid-area: hs6;
 }
 
-.habilidades .soft-skills .flex {
-  grid-area: flexibilidade;
+.habilidades .soft-skills .ss1 {
+  grid-area: ss1;
 }
 
-.habilidades .soft-skills .comun {
-  grid-area: comunicacao;
+.habilidades .soft-skills .ss2 {
+  grid-area: ss2;
 }
 
-.habilidades .soft-skills .cria {
-  grid-area: criatividade;
+.habilidades .soft-skills .ss3 {
+  grid-area: ss3;
 }
 
-.habilidades .soft-skills .orga {
-  grid-area: organizacao;
+.habilidades .soft-skills .ss4 {
+  grid-area: ss4;
 }
 
-.habilidades .soft-skills .inte {
-  grid-area: inteligencia;
+.habilidades .soft-skills .ss5 {
+  grid-area: ss5;
 }
 
-.habilidades .soft-skills .adap {
-  grid-area: adaptabilidade;
+.habilidades .soft-skills .ss6 {
+  grid-area: ss6;
 }
 
-.habilidades .soft-skills .flex,
-.comun,
-.cria,
-.orga,
-.inte,
-.adap {
+.habilidades .soft-skills .ss1,
+.ss2,
+.ss3,
+.ss4,
+.ss5,
+.ss6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.habilidades .soft-skills .flex .fa-person,
-.comun .fa-comments,
-.cria .fa-shapes,
-.orga .fa-briefcase,
-.inte .fa-brain,
-.adap .fa-users {
+.habilidades .soft-skills .ss1 .fa-person,
+.ss2 .fa-comments,
+.ss3 .fa-shapes,
+.ss4 .fa-briefcase,
+.ss5 .fa-brain,
+.ss6 .fa-users {
   font-size: 7.6rem;
   color: var(--cor-padrao);
 }
 
-.habilidades .soft-skills .flex h3,
-.comun h3,
-.cria h3,
-.orga h3,
-.inte h3,
-.adap h3 {
+.habilidades .soft-skills .ss1 h3,
+.ss2 h3,
+.ss3 h3,
+.ss4 h3,
+.ss5 h3,
+.ss6 h3 {
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;

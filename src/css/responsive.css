@@ -10,7 +10,6 @@
 
   .projetos {
     justify-content: flex-start;
-    margin-top: 5rem;
   }
 
   .projetos .container-projetos {
@@ -94,9 +93,9 @@
     grid-area: soft;
     grid:
       "soft soft"
-      "flexibilidade comunicacao"
-      "organizacao inteligencia"
-      "criatividade adaptabilidade";
+      "ss1 ss2"
+      "ss3 ss4"
+      "ss5 ss6";
     grid-gap: 0 5rem;
   }
 
@@ -104,9 +103,9 @@
     grid-area: hard;
     grid:
       "hard hard"
-      "html css"
-      "git python"
-      "js clean";
+      "hs1 hs2"
+      "hs3 hs4"
+      "hs5 hs6";
     grid-gap: 0 5rem;
   }
 
@@ -161,10 +160,11 @@
   main {
     grid:
       "principal" 100vh
-      "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 270vh)
-      "habilidades" minmax(100vh, 250vh)
+      "sobre" minmax(100vh, 130vh)
+      "projetos" minmax(100vh, 200vh)
+      "habilidades" minmax(100vh, 180vh)
       "footer" auto;
+      grid-gap: 15rem;
   }
 
   .principal .titulo {
@@ -173,6 +173,16 @@
 
   .principal .subtitulo {
     font-size: 2.5rem;
+  }
+
+  .sobre {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .sobre .imagem-sobre {
+    width: 30rem;
+    height: 30rem;
   }
 
   .sobre .titulo-sobre {
