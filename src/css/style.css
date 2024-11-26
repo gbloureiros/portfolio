@@ -30,7 +30,6 @@ main {
   justify-content: center;
   position: relative;
   grid-area: principal;
-  background-color: red;
 }
 
 .principal .titulo {
@@ -72,7 +71,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 15rem;
-  background-color: antiquewhite;
 }
 
 .sobre .imagem-sobre {
@@ -140,7 +138,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
 }
 
 .projetos h2 {
@@ -270,7 +267,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: brown;
 }
 
 .habilidades h2 {

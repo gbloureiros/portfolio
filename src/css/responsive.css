@@ -274,7 +274,7 @@
     grid:
       "principal" 100vh
       "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 230vh)
+      "projetos" minmax(100vh, 250vh)
       "habilidades" minmax(100vh, 230vh)
       "footer" auto;
       grid-gap: 12rem;
