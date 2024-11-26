@@ -1,17 +1,4 @@
 @media (max-width: 1415px) {
-  main {
-    grid:
-      "principal" 100vh
-      "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 160vh)
-      "habilidades" minmax(100vh, 160vh)
-      "footer" auto;
-  }
-
-  .projetos {
-    justify-content: flex-start;
-  }
-
   .projetos .container-projetos {
     gap: 5rem;
   }
@@ -25,6 +12,36 @@
       "soft" 600px;
     grid-template-columns: minmax(100px, 600px);
     grid-gap: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    grid:
+      "principal" 100vh
+      "sobre" 100vh
+      "projetos" minmax(100vh, 120vh)
+      "habilidades" 100vh
+      "footer" auto;
+  }
+
+  .sobre {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .sobre .imagem-sobre {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .projetos {
+    justify-content: flex-start;
+    padding-top: 30rem;
+  }
+
+  .habilidades {
+    padding-top: 4rem;
   }
 }
 
@@ -72,10 +89,24 @@
   main {
     grid:
       "principal" 100vh
-      "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 230vh)
-      "habilidades" minmax(100vh, 180vh)
+      "sobre" 100vh
+      "projetos" minmax(100vh, 170vh)
+      "habilidades" minmax(100vh, 130vh)
       "footer" auto;
+  }
+
+  .sobre {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .sobre .imagem-sobre {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .projetos {
+    padding-top: 10rem;
   }
 }
 
@@ -156,15 +187,14 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   main {
     grid:
       "principal" 100vh
-      "sobre" minmax(100vh, 130vh)
-      "projetos" minmax(100vh, 200vh)
+      "sobre" minmax(100vh, 150vh)
+      "projetos" minmax(100vh, 190vh)
       "habilidades" minmax(100vh, 180vh)
       "footer" auto;
-      grid-gap: 15rem;
   }
 
   .principal .titulo {
@@ -215,6 +245,10 @@
     padding-bottom: 6rem;
   }
 
+  .habilidades {
+    padding-top: 10rem;
+  }
+
   .habilidades h2 {
     font-size: 3rem;
     padding-bottom: 7rem;
@@ -226,5 +260,23 @@
 
   .projetos .container-projetos .container .projeto {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 390px) {
+  main {
+      grid-gap: 12rem;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    grid:
+      "principal" 100vh
+      "sobre" minmax(100vh, 150vh)
+      "projetos" minmax(100vh, 230vh)
+      "habilidades" minmax(100vh, 230vh)
+      "footer" auto;
+      grid-gap: 12rem;
   }
 }
