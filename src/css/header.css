@@ -3,6 +3,10 @@
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--cor-bg);
 }
 
 .header .logo {
@@ -33,6 +37,15 @@
   width: 6rem;
   height: 6rem;
   align-self: flex-end;
+}
+
+.header .navegacao ul li button {
+  all: unset;
+  cursor: pointer;
+}
+
+.header .navegacao ul li #dark-icon {
+  color: #fafafa;
 }
 
 .header .navegacao label {
