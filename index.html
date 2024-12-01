@@ -40,10 +40,10 @@
         </label>
 
         <ul>
-          <li><a href="#principal">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a class="actived js-link" href="#principal">Home</a></li>
+          <li><a href="#sobre" class="js-link">Sobre</a></li>
+          <li><a href="#projetos" class="js-link">Projetos</a></li>
+          <li><a href="#habilidades" class="js-link">Habilidades</a></li>
           <li>
             <button onclick="toggleDarkMode()">
               <svg width="30" height="30" id="light-icon">
@@ -84,9 +84,9 @@
     </header>
 
     <main>
-      <section class="principal" id="principal">
+      <section class="section principal" id="principal">
         <h2 class="titulo">Gabriel Loureiro</h2>
-        <h3 class="subtitulo">Frontend <span>Developer</span></h3>
+        <h3 class="subtitulo">Frontend <span class="auto-type"></span></h3>
         <div class="redes-sociais">
           <ul>
             <li>
@@ -113,7 +113,7 @@
         <i class="fa-solid fa-arrow-down"></i>
       </section>
 
-      <section class="sobre" id="sobre">
+      <section class="section sobre" id="sobre">
         <div class="imagem-sobre">
           <img src="./src/images/imagem-portfolio.jpg" alt="imagem perfil" />
         </div>
@@ -141,7 +141,7 @@
         </div>
       </section>
 
-      <section class="projetos" id="projetos">
+      <section class="section projetos" id="projetos">
         <h2>Alguns <span>Projetos</span></h2>
         <div class="container-projetos">
           <div class="container">
@@ -243,7 +243,7 @@
         </div>
       </section>
 
-      <section class="habilidades" id="habilidades">
+      <section class="section habilidades" id="habilidades">
         <div class="hard-skills">
           <div class="titulo-hard">
             <h2><span>Hard</span> Skills</h2>
@@ -322,7 +322,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

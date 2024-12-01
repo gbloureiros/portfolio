@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem;
+  height: 6.7rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -24,12 +24,35 @@
   font-size: 1.7rem;
 }
 
-.header .navegacao ul a {
-  transition: 0.2s ease-in-out;
+.header .navegacao ul li a {
+  transition: all 0.3s ease;
 }
 
-.header .navegacao ul a:hover {
-  color: var(--cor-padrao);
+.header .navegacao ul li a.actived::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  top: 5px;
+  background: var(--cor-padrao);
+  transition: all 0.3s;
+} 
+
+.header .navegacao ul li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.header .navegacao ul li > a:hover::after, li > a.active-nav::after {
+  width: 100%;
+  background: var(--cor-padrao);
 }
 
 .header .menu {
