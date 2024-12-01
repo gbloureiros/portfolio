@@ -231,7 +231,7 @@ main {
   height: 100%;
   border-radius: 2rem;
   object-fit: cover;
-  -webkit-mask-image: linear-gradient(to top, transparent 0%, var(--cor-bg) 50%);
+  mask-image: linear-gradient(to top, transparent 0%, var(--cor-bg) 50%);
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
 }
