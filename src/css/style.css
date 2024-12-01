@@ -152,7 +152,6 @@ main {
 
 .projetos .container-projetos {
   width: 100%;
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,8 +162,8 @@ main {
 .projetos .container-projetos .container {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 400px;
+  width: 371px;
+  height: 46rem;
   justify-content: space-between;
   box-shadow: 2px 2px 2px 3px var(--cor-da-sombra);
   border-radius: 2rem;
@@ -172,14 +171,34 @@ main {
 }
 
 .projetos .container-projetos .container .projeto {
-  width: 380px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   border-radius: 2rem;
-  box-shadow: 1px 1px 1px 2px var(--cor-da-sombra);
+  overflow: hidden;
 }
 
 .projetos .container-projetos .container .info-projeto {
   margin-top: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.projetos .container-projetos .container .info-projeto .tecnologias {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.projetos .container-projetos .container .info-projeto .tecnologias p {
+  border: 1px solid #BEBFC5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: #BEBFC5;
+  color: #fff;
 }
 
 .projetos .container-projetos .container .info-projeto h3 {
@@ -191,38 +210,20 @@ main {
 .projetos .container-projetos .container .info-projeto p {
   font-size: 1.4rem;
   text-align: justify;
-  padding: 1.5rem 0;
 }
 
 .projetos .container-projetos .container .links-projeto {
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 0 1.3rem 1.3rem;
 }
 
 .projetos .container-projetos .container .links-projeto a {
-  font-size: 1.2rem;
-  background-color: var(--cor-padrao);
-  width: 130px;
-  color: #fff;
-  padding: 1rem;
-  border-radius: 12rem;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 1px solid var(--cor-padrao);
+  font-size: 3rem;
 }
 
 .projetos .container-projetos .container .links-projeto a:hover {
-  background-color: #fff;
   color: var(--cor-padrao);
-}
-
-.projetos .container-projetos .container .projeto .imagem-link {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .projetos .container-projetos .container .projeto img {
@@ -230,36 +231,14 @@ main {
   height: 100%;
   border-radius: 2rem;
   object-fit: cover;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, var(--cor-bg) 50%);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
 }
 
-.projetos .container-projetos .container .projeto .imagem-link::before {
-  content: "";
-  background-color: var(--cor-padrao);
-  border-radius: 2rem;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.projetos .container-projetos .container .projeto .imagem-link:hover::before {
-  opacity: 0.4;
-}
-
-.projetos .container-projetos .container .projeto .imagem-link::after {
-  content: "";
-  background: url(../images/icon-view.svg) center no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.projetos .container-projetos .container .projeto .imagem-link:hover::after {
-  opacity: 1;
+.projetos .container-projetos .container .projeto:hover img{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .habilidades {
@@ -468,6 +447,6 @@ main {
   animation: downarrow 0.6s infinite alternate ease-in-out;
   position: absolute;
   right: 50px;
-  top: -100px;
+  top: 34%;
 }
 
