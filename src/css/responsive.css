@@ -40,6 +40,11 @@
     padding-top: 30rem;
   }
 
+  .projetos .container-projetos .container .modal .close {
+    top: 50rem;
+    right: 48%;
+}
+
   .habilidades {
     padding-top: 4rem;
   }
@@ -108,6 +113,11 @@
   .projetos {
     padding-top: 10rem;
   }
+
+  .projetos .container-projetos .container .modal .close {
+    top: 36rem;
+    right: 48%;
+}
 }
 
 @media (max-width: 600px) {
@@ -236,10 +246,15 @@
     height: 400px;
   }
 
-  .projetos .container-projetos .container .projeto {
+  .projetos .container-projetos .container .card {
     width: 280px;
     height: 200px;
   }
+
+  .projetos .container-projetos .container .modal .close {
+    top: 20rem;
+    right: 46%;
+}
 
   .projetos h2 {
     font-size: 3rem;
@@ -259,7 +274,7 @@
     margin-bottom: 1rem;
   }
 
-  .projetos .container-projetos .container .projeto {
+  .projetos .container-projetos .container .card {
     margin-top: 5px;
   }
 
