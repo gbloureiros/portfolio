@@ -1,14 +1,16 @@
 :root {
   --cor-padrao: rgb(85, 131, 17);
+  --cor-padrao-escura: rgb(44, 74, 0);
   --cor-bg: #f2f3f4;
   --cor-da-letra: #000;
   --cor-do-hamburguer: #000;
-  --cor-da-sombra: rgba(0, 0, 0, 0.2);
+  --cor-da-sombra: rgba(0, 0, 0, 0.1);
+  --cor-do-projeto: white;
 }
 
 .dark-mode:root {
   --cor-bg: #1b1b1b;
   --cor-da-letra: #f2f3f4;
   --cor-do-hamburguer: #f2f3f4;
-  --cor-projetos: ;
+  --cor-do-projeto: #141313;
 }

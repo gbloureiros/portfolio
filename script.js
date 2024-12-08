@@ -146,6 +146,119 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("image4");
+    const modal = document.getElementById("fullscreen-modal4");
+    const fullscreenImage = document.getElementById("fullscreen-image4");
+    const closeModal = document.getElementById("close4");
+
+    image.addEventListener("click", () => {
+      fullscreenImage.src = image.src;
+      modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("image5");
+    const modal = document.getElementById("fullscreen-modal5");
+    const fullscreenImage = document.getElementById("fullscreen-image5");
+    const closeModal = document.getElementById("close5");
+
+    image.addEventListener("click", () => {
+      fullscreenImage.src = image.src;
+      modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("image6");
+    const modal = document.getElementById("fullscreen-modal6");
+    const fullscreenImage = document.getElementById("fullscreen-image6");
+    const closeModal = document.getElementById("close6");
+
+    image.addEventListener("click", () => {
+      fullscreenImage.src = image.src;
+      modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("image7");
+    const modal = document.getElementById("fullscreen-modal7");
+    const fullscreenImage = document.getElementById("fullscreen-image7");
+    const closeModal = document.getElementById("close7");
+
+    image.addEventListener("click", () => {
+      fullscreenImage.src = image.src;
+      modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("image8");
+    const modal = document.getElementById("fullscreen-modal8");
+    const fullscreenImage = document.getElementById("fullscreen-image8");
+    const closeModal = document.getElementById("close8");
+
+    image.addEventListener("click", () => {
+      fullscreenImage.src = image.src;
+      modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+
+
+// Trocar o idioma
+
+document.addEventListener("DOMContentLoaded", () => {
   const activeFlag = document.getElementById("active-flag");
   const langButtons = document.querySelectorAll(".lang-button");
 
@@ -306,3 +419,49 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  // Carrossel Projetos
+
+  const carousel = document.getElementById('carousel');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const totalCards = document.querySelectorAll('.card').length;
+        const cardWidth = 300;
+
+        let currentIndex = 0;
+        let cardsVisible = Math.floor(window.innerWidth / cardWidth - 1);
+
+        function updateCarousel() {
+            const offset = -currentIndex * cardWidth;
+            carousel.style.transform = `translateX(${offset}px)`;
+
+            // Atualizar o estado dos botões
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex === totalCards - cardsVisible;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalCards - cardsVisible) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        function handleResize() {
+            cardsVisible = Math.floor(window.innerWidth / cardWidth);
+            currentIndex = Math.min(currentIndex, totalCards - cardsVisible);
+            updateCarousel();
+        }
+
+        // Inicialização
+        updateCarousel();
+
+        // Atualizar a visibilidade dos cards e o carrossel no redimensionamento da janela
+        window.addEventListener('resize', handleResize);

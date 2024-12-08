@@ -125,7 +125,7 @@ main {
 
 .sobre .conteudo-sobre a:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--cor-bg);
   border: 1px solid var(--cor-padrao);
   color: var(--cor-padrao);
 }
@@ -136,136 +136,169 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: 90vw;
 }
 
 .projetos h2 {
   font-size: 4rem;
-  padding-bottom: 3rem;
   text-transform: uppercase;
 }
 
-.projetos .container-projetos {
-  width: 100%;
+.projetos .carrossel {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 10rem;
+  align-items: center;
+  padding-top: 6rem;
 }
 
-.projetos .container-projetos .container {
-  display: flex;
-  flex-direction: column;
-  width: 371px;
-  height: 46rem;
-  justify-content: space-between;
-  box-shadow: 2px 2px 2px 3px var(--cor-da-sombra);
-  border-radius: 2rem;
-  padding: 1rem;
-}
-
-.projetos .container-projetos .container .projeto {
-  width: 100%;
-  height: auto;
-  border-radius: 2rem;
+.projetos .carrossel .carousel-container {
+  width: 83vw;
   overflow: hidden;
 }
 
-.projetos .container-projetos .container .info-projeto {
-  gap: 2rem;
+.projetos .carrossel .carousel-container .carousel {
   display: flex;
-  flex-direction: column;
+  transition: transform 0.4s ease-in-out;
+  width: calc(30rem * 8);
+  gap: 1rem;
 }
 
-.projetos .container-projetos .container .info-projeto .tecnologias {
-  display: flex;
-  gap: 1.2rem;
-}
-
-.projetos .container-projetos .container .info-projeto .tecnologias p {
-  border: 1px solid #bebfc5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  height: 3rem;
-  border-radius: 3rem;
-  background-color: #bebfc5;
-  color: #fff;
-}
-
-.projetos .container-projetos .container .info-projeto h3 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.projetos .container-projetos .container .info-projeto p {
-  font-size: 1.4rem;
-  text-align: justify;
-}
-
-.projetos .container-projetos .container .links-projeto {
-  display: flex;
-  gap: 2rem;
-  padding: 0 0 1.3rem 1.3rem;
-}
-
-.projetos .container-projetos .container .links-projeto a {
-  font-size: 3rem;
-}
-
-.projetos .container-projetos .container .links-projeto a:hover {
-  color: var(--cor-padrao);
-}
-
-.projetos .container-projetos .container .card {
-  width: 35rem;
-  margin: 5px auto;
+.projetos .carrossel .carousel-container .carousel .card {
+  width: 30rem;
+  height: 40rem;
+  box-shadow: 0 4px 6px var(--cor-da-sombra);
   border-radius: 8px;
-  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--cor-do-projeto);
 }
 
-.projetos .container-projetos .container .card .card-image {
-  width: 100%;
-  cursor: pointer;
-  object-fit: cover;
-  mask-image: linear-gradient(to top, transparent 0%, var(--cor-bg) 50%);
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-}
+.projetos .carrossel .carousel-container .carousel .card .info-projeto {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-.projetos .container-projetos .container .modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  .projetos .carrossel .carousel-container .carousel .card .info-projeto .tecnologias {
+    display: flex;
+    gap: 1.2rem;
+  }
 
-.projetos .container-projetos .container .modal .modal-content {
-  display: block;
-  margin: auto;
-  max-width: 90%;
-  max-height: 90%;
-}
+  .projetos .carrossel .carousel-container .carousel .card .info-projeto .tecnologias p {
+    border: 1px solid #bebfc5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: #bebfc5;
+    color: #fff;
+  }
 
-.projetos .container-projetos .container .modal .close {
+  .projetos .carrossel .carousel-container .carousel .card .info-projeto h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .info-projeto p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .links-projeto {
+    display: flex;
+    gap: 2rem;
+    padding: 0 0 1.3rem 1.3rem;
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .links-projeto a {
+    font-size: 3rem;
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .links-projeto a:hover {
+    color: var(--cor-padrao);
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .projeto-imagem {
+    width: 28rem;
+    height: 138px;
+    margin: 5px auto;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .projeto-imagem .card-image {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    mask-image: linear-gradient(to top, transparent 0%, var(--cor-bg) 50%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.modal .modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+.modal .close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  .projetos .carrossel .carousel-container .carousel .card .projeto-imagem:hover .card-image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+.projetos .carrossel .buttons {
   position: absolute;
-  top: 2rem;
-  right: 3rem;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
+  bottom: 40%;
+  width: 92vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-.projetos .container-projetos .container .card:hover .card-image {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.projetos .carrossel .buttons button {
+  background-color: var(--cor-padrao);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projetos .carrossel .buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.projetos .carrossel .buttons button:hover:not(:disabled) {
+  background-color: var(--cor-padrao-escura);
 }
 
 .habilidades {

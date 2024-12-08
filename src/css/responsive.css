@@ -1,8 +1,3 @@
-@media (max-width: 1415px) {
-  .projetos .container-projetos {
-    gap: 5rem;
-  }
-}
 
 @media (max-width: 1200px) {
   .habilidades {
@@ -40,7 +35,11 @@
     padding-top: 30rem;
   }
 
-  .projetos .container-projetos .container .modal .close {
+  .projetos .carrossel .buttons {
+    width: 95vw;
+  }
+
+    .modal .close {
     top: 50rem;
     right: 48%;
   }
@@ -110,7 +109,7 @@
     padding-top: 10rem;
   }
 
-  .projetos .container-projetos .container .modal .close {
+.modal .close {
     top: 36rem;
     right: 48%;
   }
@@ -237,17 +236,7 @@
     padding-bottom: 1.6rem;
   }
 
-  .projetos .container-projetos .container {
-    width: 300px;
-    height: 400px;
-  }
-
-  .projetos .container-projetos .container .card {
-    width: 280px;
-    height: 200px;
-  }
-
-  .projetos .container-projetos .container .modal .close {
+.modal .close {
     top: 20rem;
     right: 46%;
   }
@@ -255,6 +244,10 @@
   .projetos h2 {
     font-size: 3rem;
     padding-bottom: 6rem;
+  }
+
+  .projetos .carrossel .buttons {
+    width: 98vw;
   }
 
   .habilidades {
@@ -266,15 +259,11 @@
     padding-bottom: 7rem;
   }
 
-  .projetos .container-projetos .container .info-projeto {
+  .projetos .carrossel .carousel-container .carousel .card .info-projeto {
     margin-bottom: 1rem;
   }
 
-  .projetos .container-projetos .container .card {
-    margin-top: 5px;
-  }
-
-  .projetos .container-projetos .container .links-projeto {
+  .projetos .carrossel .carousel-container .carousel .card .links-projeto {
     display: flex;
     gap: 2rem;
     padding: 1rem 1.3rem;
