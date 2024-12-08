@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
       descricaoProjeto1:
         "In October 2020, I developed a website in a group using html, css, javascript and php for an academic project.",
       descricaoProjeto2:
-        "In October 2020, I developed a website in a group using html, css, javascript and php for an academic project.",
+        "Website created with html and css for the Frontend Mentor challenge and Quest from the DevQuest course.",
       descricaoProjeto3:
         "Website developed in the DevQuest course about the TV series 'House of the Dragon' using html, css and javascript.",
       ss1: "flexibility",
@@ -306,4 +306,3 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
-
