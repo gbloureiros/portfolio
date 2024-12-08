@@ -95,6 +95,17 @@
       "footer" auto;
   }
 
+  .header {
+    position: relative;
+    justify-content: center;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    right: 5rem;
+    bottom: 1.5rem;
+  }
+
   .sobre {
     flex-direction: column;
     gap: 3rem;
@@ -201,6 +212,10 @@
       "projetos" minmax(100vh, 200vh)
       "habilidades" minmax(100vh, 200vh)
       "footer" auto;
+  }
+
+  .mobile-menu {
+    right: 2rem;
   }
 
   .principal .titulo {
