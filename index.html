@@ -31,25 +31,31 @@
       <h1 class="logo">GL <span> Dev </span></h1>
 
       <nav class="navegacao">
-        <input type="checkbox" id="menu-hamburguer" />
-
-        <label for="menu-hamburguer">
-          <div class="menu">
-            <span class="hamburguer"></span>
-          </div>
-        </label>
-
-        <ul>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
           <li><a class="actived js-link" href="#principal">Home</a></li>
-          <li><a id="sobre" href="#sobre" class="js-link">Sobre</a></li>
-          <li><a id="projetos" href="#projetos" class="js-link">Projetos</a></li>
-          <li><a id="habilidades" href="#habilidades" class="js-link">Habilidades</a></li>
+          <li><a id="sobre-menu" href="#sobre" class="js-link">Sobre</a></li>
           <li>
-            <div class="language-selector">
-                <img id="active-flag" src="./src/images/bandeira brasil.png" alt="Bandeira do Brasil" class="flag-icon">
-            </div>
+            <a id="projetos-menu" href="#projetos" class="js-link">Projetos</a>
           </li>
           <li>
+            <a id="habilidades-menu" href="#habilidades" class="js-link"
+              >Habilidades</a
+            >
+          </li>
+          <li class="botoes">
+            <div class="language-selector">
+              <img
+                id="active-flag"
+                src="./src/images/bandeira brasil.png"
+                alt="Bandeira do Brasil"
+                class="flag-icon"
+              />
+            </div>
             <button onclick="toggleDarkMode()" class="icon-button">
               <svg width="30" height="30" id="light-icon">
                 <circle cx="15" cy="15" r="6" fill="currentColor" />
@@ -84,7 +90,6 @@
               </svg>
             </button>
           </li>
-
         </ul>
       </nav>
     </header>
@@ -124,8 +129,12 @@
           <img src="./src/images/imagem-portfolio.jpg" alt="imagem perfil" />
         </div>
         <div class="conteudo-sobre">
-          <h2 id="titulo-sobre" class="titulo-sobre">Sobre <span id="titulo-sobre-span">mim</span></h2>
-          <h3 id="nome-sobre"><span id="nome-sobre-span">Olá,</span> me chamo Gabriel Loureiro</h3>
+          <h2 id="titulo-sobre" class="titulo-sobre">
+            Sobre <span id="titulo-sobre-span">mim</span>
+          </h2>
+          <h3 id="nome-sobre">
+            <span id="nome-sobre-span">Olá,</span> me chamo Gabriel Loureiro
+          </h3>
           <p id="descricao-sobre">
             Estou cursando Ciência da Computação na Unicarioca, além disso, faço
             um curso por fora da faculdade, chamado DevQuest Full-Stack, focado
@@ -149,15 +158,22 @@
       </section>
 
       <section class="section projetos" id="projetos">
-        <h2 id="alguns-projetos">Alguns <span id="alguns-projetos-span">Projetos</span></h2>
+        <h2 id="alguns-projetos">
+          Alguns <span id="alguns-projetos-span">Projetos</span>
+        </h2>
         <div class="container-projetos">
           <div class="container">
             <div class="card">
-                <img src="./src/images/projeto-mostra.png" alt="Projeto Mostra Tecnológica" class="card-image" id="image" />
+              <img
+                src="./src/images/projeto-mostra.png"
+                alt="Projeto Mostra Tecnológica"
+                class="card-image"
+                id="image"
+              />
             </div>
             <div id="fullscreen-modal" class="modal">
-                <span class="close" id="close">&times;</span>
-                <img class="modal-content" id="fullscreen-image" />
+              <span class="close" id="close">&times;</span>
+              <img class="modal-content" id="fullscreen-image" />
             </div>
             <div class="info-projeto">
               <h3>site mostra tecnológica</h3>
@@ -187,11 +203,16 @@
           </div>
           <div class="container">
             <div class="card">
-                <img src="./src/images/projeto huddle base.png" alt="Projeto Huddle Base" class="card-image" id="image2" />
+              <img
+                src="./src/images/projeto huddle base.png"
+                alt="Projeto Huddle Base"
+                class="card-image"
+                id="image2"
+              />
             </div>
             <div id="fullscreen-modal2" class="modal">
-                <span class="close" id="close2">&times;</span>
-                <img class="modal-content" id="fullscreen-image2" />
+              <span class="close" id="close2">&times;</span>
+              <img class="modal-content" id="fullscreen-image2" />
             </div>
             <div class="info-projeto">
               <h3>projeto huddle base</h3>
@@ -219,11 +240,16 @@
           </div>
           <div class="container">
             <div class="card">
-                <img src="./src/images/projeto casa do dragao.png" alt="Projeto Casa do Dragão" class="card-image" id="image3" />
+              <img
+                src="./src/images/projeto casa do dragao.png"
+                alt="Projeto Casa do Dragão"
+                class="card-image"
+                id="image3"
+              />
             </div>
             <div id="fullscreen-modal3" class="modal">
-                <span class="close" id="close3">&times;</span>
-                <img class="modal-content" id="fullscreen-image3" />
+              <span class="close" id="close3">&times;</span>
+              <img class="modal-content" id="fullscreen-image3" />
             </div>
             <div class="info-projeto">
               <h3>site casa do dragão</h3>
@@ -250,12 +276,8 @@
               ></a>
             </div>
           </div>
-
-
         </div>
       </section>
-
-
 
       <section class="section habilidades" id="habilidades">
         <div class="hard-skills">
@@ -337,6 +359,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -43,7 +43,7 @@
   .projetos .container-projetos .container .modal .close {
     top: 50rem;
     right: 48%;
-}
+  }
 
   .habilidades {
     padding-top: 4rem;
@@ -51,42 +51,38 @@
 }
 
 @media (max-width: 900px) {
-  .header .menu {
-    display: block;
+  body {
+    overflow-x: hidden;
   }
-
-  .header .navegacao ul {
-    display: none;
-  }
-
-  .header input:checked ~ ul {
-    display: block;
-  }
-
-  .header .navegacao {
+  .nav-list {
     position: absolute;
-    top: 8px;
-    right: 2rem;
-    z-index: 1;
-  }
-
-  .header .navegacao ul {
+    top: 6.7rem;
+    right: 0;
     width: 20rem;
-    background-color: var(--cor-bg);
-    padding: 2rem;
-    box-shadow: 2px 2px 2px 2px var(--cor-da-sombra);
-  }
-
-  .header .navegacao ul li a {
-    text-align: center;
-    padding: 2rem;
-    display: block;
-  }
-
-  .header .navegacao ul li:last-child {
-    margin-top: 1rem;
-    display: flex;
+    height: 30rem;
+    background: var(--cor-bg);
+    box-shadow: 2px 2px 7px var(--cor-da-sombra);
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .botoes {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
   }
 }
 
@@ -117,7 +113,7 @@
   .projetos .container-projetos .container .modal .close {
     top: 36rem;
     right: 48%;
-}
+  }
 }
 
 @media (max-width: 600px) {
@@ -254,7 +250,7 @@
   .projetos .container-projetos .container .modal .close {
     top: 20rem;
     right: 46%;
-}
+  }
 
   .projetos h2 {
     font-size: 3rem;
@@ -287,7 +283,7 @@
 
 @media (max-width: 390px) {
   main {
-      grid-gap: 12rem;
+    grid-gap: 12rem;
   }
 }
 
@@ -299,7 +295,7 @@
       "projetos" minmax(100vh, 250vh)
       "habilidades" minmax(100vh, 230vh)
       "footer" auto;
-      grid-gap: 12rem;
+    grid-gap: 12rem;
   }
 
   .footer .voltar .fa-arrow-up {
