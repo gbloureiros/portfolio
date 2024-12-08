@@ -91,7 +91,7 @@ main {
   padding-bottom: 3rem;
 }
 
-.sobre .conteudo-sobre .titulo-sobre span {
+#titulo-sobre-span, #nome-sobre-span, #alguns-projetos-span {
   color: var(--cor-padrao);
 }
 
@@ -103,10 +103,6 @@ main {
 .sobre .conteudo-sobre h3 {
   font-size: 3rem;
   padding-bottom: 1.6rem;
-}
-
-.sobre .conteudo-sobre h3 span {
-  color: var(--cor-padrao);
 }
 
 .sobre .conteudo-sobre p {
@@ -144,10 +140,6 @@ main {
   font-size: 4rem;
   padding-bottom: 3rem;
   text-transform: uppercase;
-}
-
-.projetos h2 span {
-  color: var(--cor-padrao);
 }
 
 .projetos .container-projetos {

@@ -41,11 +41,16 @@
 
         <ul>
           <li><a class="actived js-link" href="#principal">Home</a></li>
-          <li><a href="#sobre" class="js-link">Sobre</a></li>
-          <li><a href="#projetos" class="js-link">Projetos</a></li>
-          <li><a href="#habilidades" class="js-link">Habilidades</a></li>
+          <li><a id="sobre" href="#sobre" class="js-link">Sobre</a></li>
+          <li><a id="projetos" href="#projetos" class="js-link">Projetos</a></li>
+          <li><a id="habilidades" href="#habilidades" class="js-link">Habilidades</a></li>
           <li>
-            <button onclick="toggleDarkMode()">
+            <div class="language-selector">
+                <img id="active-flag" src="./src/images/bandeira brasil.png" alt="Bandeira do Brasil" class="flag-icon">
+            </div>
+          </li>
+          <li>
+            <button onclick="toggleDarkMode()" class="icon-button">
               <svg width="30" height="30" id="light-icon">
                 <circle cx="15" cy="15" r="6" fill="currentColor" />
 
@@ -79,6 +84,7 @@
               </svg>
             </button>
           </li>
+
         </ul>
       </nav>
     </header>
@@ -118,9 +124,9 @@
           <img src="./src/images/imagem-portfolio.jpg" alt="imagem perfil" />
         </div>
         <div class="conteudo-sobre">
-          <h2 class="titulo-sobre">Sobre <span>mim</span></h2>
-          <h3><span>Olá,</span> me chamo Gabriel Loureiro</h3>
-          <p>
+          <h2 id="titulo-sobre" class="titulo-sobre">Sobre <span id="titulo-sobre-span">mim</span></h2>
+          <h3 id="nome-sobre"><span id="nome-sobre-span">Olá,</span> me chamo Gabriel Loureiro</h3>
+          <p id="descricao-sobre">
             Estou cursando Ciência da Computação na Unicarioca, além disso, faço
             um curso por fora da faculdade, chamado DevQuest Full-Stack, focado
             em frontend, mas com o básico do back-end. Também cursei dois anos
@@ -136,13 +142,14 @@
             href="./src/curriculo/Currículo Gabriel Loureiro.pdf"
             download="Currículo Gabriel Loureiro.pdf"
             target="_blank"
+            id="curriculo"
             >Baixe meu currículo</a
           >
         </div>
       </section>
 
       <section class="section projetos" id="projetos">
-        <h2>Alguns <span>Projetos</span></h2>
+        <h2 id="alguns-projetos">Alguns <span id="alguns-projetos-span">Projetos</span></h2>
         <div class="container-projetos">
           <div class="container">
             <div class="card">
@@ -154,7 +161,7 @@
             </div>
             <div class="info-projeto">
               <h3>site mostra tecnológica</h3>
-              <p>
+              <p id="descricao-projeto1">
                 Em outubro de 2020, desenvolvi em grupo um site utilizando html,
                 css, javascript e php para um trabalho acadêmico.
               </p>
@@ -188,8 +195,8 @@
             </div>
             <div class="info-projeto">
               <h3>projeto huddle base</h3>
-              <p>
-                Site criado com HTML e CSS do desafio do Frontend Mentor e Quest
+              <p id="descricao-projeto2">
+                Site criado com html e css do desafio do Frontend Mentor e Quest
                 do curso DevQuest.
               </p>
               <div class="tecnologias">
@@ -220,7 +227,7 @@
             </div>
             <div class="info-projeto">
               <h3>site casa do dragão</h3>
-              <p>
+              <p id="descricao-projeto3">
                 Site desenvolvido no curso DevQuest sobre a série de TV "Casa do
                 Dragão" utilizando html, css e javascript.
               </p>
@@ -287,27 +294,27 @@
           </div>
           <div class="ss1">
             <i class="fa-solid fa-person"></i>
-            <h3>flexibilidade</h3>
+            <h3 id="ss1">flexibilidade</h3>
           </div>
           <div class="ss2">
             <i class="fa-solid fa-comments"></i>
-            <h3>comunicação eficaz</h3>
+            <h3 id="ss2">comunicação eficaz</h3>
           </div>
           <div class="ss3">
             <i class="fa-solid fa-shapes"></i>
-            <h3>criatividade</h3>
+            <h3 id="ss3">criatividade</h3>
           </div>
           <div class="ss4">
             <i class="fa-solid fa-briefcase"></i>
-            <h3>organização</h3>
+            <h3 id="ss4">organização</h3>
           </div>
           <div class="ss5">
             <i class="fa-solid fa-brain"></i>
-            <h3>inteligência emocional</h3>
+            <h3 id="ss5">inteligência emocional</h3>
           </div>
           <div class="ss6">
             <i class="fa-solid fa-users"></i>
-            <h3>adaptabilidade</h3>
+            <h3 id="ss5">adaptabilidade</h3>
           </div>
         </div>
       </section>

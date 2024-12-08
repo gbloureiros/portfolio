@@ -37,7 +37,7 @@
   top: 5px;
   background: var(--cor-padrao);
   transition: all 0.3s;
-} 
+}
 
 .header .navegacao ul li > a::after {
   content: "";
@@ -122,4 +122,14 @@
 .header input:checked ~ label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
+}
+
+#active-flag {
+    width: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#active-flag:hover {
+    transform: scale(1.1);
 }
