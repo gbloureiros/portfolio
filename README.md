@@ -37,7 +37,7 @@ Esse site é o meu portfólio, onde contém um sobre mim mais detalhado, tem alg
 
 ### Continuar Desenvolvendo
 
-No futuro quero adicionar mais algumas coisas no site, como animação quando scrollar, fazer o menu responsivo com javascript, adicionar mais projetos, fazer um carrosel com os projetos e conforme eu vou estudando adicionar mais habilidades.
+No futuro quero adicionar mais algumas coisas no site, como animação quando scrollar, adicionar mais projetos e conforme eu vou estudando adicionar mais habilidades.
 
 ### Recursos Úteis
 
@@ -50,4 +50,3 @@ No futuro quero adicionar mais algumas coisas no site, como animação quando sc
 - Website - [Gabriel Loureiro](https://gbloureiros.github.io/portfolio/)
 - LinkedIn - [@gabrielloureiros](https://www.linkedin.com/in/gabrielloureiros/)
 - Instagram - [@gabriel.loureiros](https://www.instagram.com/gabriel.loureiros/)
-
