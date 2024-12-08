@@ -15,7 +15,7 @@
     grid:
       "principal" 100vh
       "sobre" 100vh
-      "projetos" minmax(100vh, 120vh)
+      "projetos" 100vh
       "habilidades" 100vh
       "footer" auto;
   }
@@ -89,21 +89,10 @@
   main {
     grid:
       "principal" 100vh
-      "sobre" 100vh
-      "projetos" minmax(100vh, 170vh)
+      "sobre" minmax(100vh, 130vh)
+      "projetos" 100vh
       "habilidades" minmax(100vh, 130vh)
       "footer" auto;
-  }
-
-  .header {
-    position: relative;
-    justify-content: center;
-  }
-
-  .mobile-menu {
-    position: absolute;
-    right: 5rem;
-    bottom: 1.5rem;
   }
 
   .sobre {
@@ -209,13 +198,9 @@
     grid:
       "principal" 100vh
       "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 200vh)
+      "projetos" 100vh
       "habilidades" minmax(100vh, 200vh)
       "footer" auto;
-  }
-
-  .mobile-menu {
-    right: 2rem;
   }
 
   .principal .titulo {
@@ -296,7 +281,7 @@
     grid:
       "principal" 100vh
       "sobre" minmax(100vh, 150vh)
-      "projetos" minmax(100vh, 250vh)
+      "projetos" minmax(100vh, 130vh)
       "habilidades" minmax(100vh, 230vh)
       "footer" auto;
     grid-gap: 12rem;
