@@ -17,7 +17,7 @@ Esse site é o meu portfólio, onde contém um sobre mim mais detalhado, tem alg
 
 ### Screenshot
 
-![](./src/gif/gif%20tela%20principal.gif)
+![](./src/gif/tela%20principal.gif)
 ![](./src/images/screenshot%20responsivo.png)
 
 
