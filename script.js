@@ -284,6 +284,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "Site criado com html e css do desafio do Frontend Mentor e Quest do curso DevQuest.",
       descricaoProjeto3:
         "Site desenvolvido no curso DevQuest sobre a série de TV 'Casa do Dragão' utilizando html, css e javascript.",
+        descricaoProjeto4: "Este projeto, feito para faculdade, é uma simulação em python que manipula uma bandeja com 100 dados com várias rotações aleatórias.",
+        descricaoProjeto5: "Projeto criado na faculdade, em C++, que é uma árvore binária de busca.",
+        descricaoProjeto6: "Meu próprio portfólio é um projeto meu e um dos melhores, feito em html, css e javascript.",
+        descricaoProjeto7: "Site para se desculpar com alguém que você ama, criado como uma brincadeira.",
+        descricaoProjeto8: "Site usado para testar código e estudo enquanto estava aprendendo desde o básico ao avançado no curso DevQuest Full-Stack.",
       ss1: "flexibilidade",
       ss2: "comunicação eficaz",
       ss3: "criatividade",
@@ -312,6 +317,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "Website created with html and css for the Frontend Mentor challenge and Quest from the DevQuest course.",
       descricaoProjeto3:
         "Website developed in the DevQuest course about the TV series 'House of the Dragon' using html, css and javascript.",
+        descricaoProjeto4: "This project, done for college, is a python simulation that manipulates a tray with 100 dice with various random rotations.",
+        descricaoProjeto5: "Project created in college, in C++, which is a binary search tree.",
+        descricaoProjeto6: "My own portfolio is a project of mine and one of the best, done in html, css and javascript.",
+        descricaoProjeto7: "Website to apologize to someone you love, created as a joke.",
+        descricaoProjeto8: "Website used to test code and study while I was learning from basic to advanced in the DevQuest Full-Stack course.",
       ss1: "flexibility",
       ss2: "effective communication",
       ss3: "creativity",
@@ -353,6 +363,16 @@ document.addEventListener("DOMContentLoaded", () => {
       translations[lang].descricaoProjeto2;
     document.getElementById("descricao-projeto3").textContent =
       translations[lang].descricaoProjeto3;
+      document.getElementById("descricao-projeto4").textContent =
+      translations[lang].descricaoProjeto4;
+      document.getElementById("descricao-projeto5").textContent =
+      translations[lang].descricaoProjeto5;
+      document.getElementById("descricao-projeto6").textContent =
+      translations[lang].descricaoProjeto6;
+      document.getElementById("descricao-projeto7").textContent =
+      translations[lang].descricaoProjeto7;
+      document.getElementById("descricao-projeto8").textContent =
+      translations[lang].descricaoProjeto8;
     document.getElementById("ss1").textContent = translations[lang].ss1;
     document.getElementById("ss2").textContent = translations[lang].ss2;
     document.getElementById("ss3").textContent = translations[lang].ss3;
