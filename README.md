@@ -18,6 +18,8 @@ Esse site é o meu portfólio, onde contém um sobre mim mais detalhado, tem alg
 ### Screenshot
 
 ![](./src/gif/tela%20principal.gif)
+![](./src/gif/sobre%20mim.gif)
+![](./src/gif/projetos.gif)
 ![](./src/images/screenshot%20responsivo.png)
 
 
